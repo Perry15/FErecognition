@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.3.16)  16 JUL 2020 18:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.3.16)  16 JUL 2020 20:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -206,7 +206,14 @@ File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
 File: listings.cfg 2018/09/02 1.7 listings configuration
 ))
 Package: listings 2018/09/02 1.7 (Carsten Heinz)
-) (d:/Programmi/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+) (d:/Programmi/texlive/2018/texmf-dist/tex/latex/units/nicefrac.sty
+Package: nicefrac 1998/08/04 v0.9b Nice fractions
+\L@UnitsRaiseDisplaystyle=\skip51
+\L@UnitsRaiseTextstyle=\skip52
+\L@UnitsRaiseScriptstyle=\skip53
+ (d:/Programmi/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)) (d:/Programmi/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
  (d:/Programmi/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
@@ -307,7 +314,7 @@ File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
 )
-\Hy@SectionHShift=\skip51
+\Hy@SectionHShift=\skip54
 ) (d:/UNIPD_LocalD/Magistrale/FErecognition/relazione/egpaper_final.aux
 
 LaTeX Warning: Label `mytable' multiply defined.
@@ -315,21 +322,21 @@ LaTeX Warning: Label `mytable' multiply defined.
 )
 \openout1 = `egpaper_final.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 55.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 56.
  (d:/Programmi/texlive/2018/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) ABD: EveryShipout initializing macros (d:/Programmi/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -360,7 +367,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 \c@lstlisting=\count133
 \AtBeginShipoutBox=\box39
 Package atbegshi Info: Package `everyshi' patched.
-Package hyperref Info: Link coloring OFF on input line 55.
+Package hyperref Info: Link coloring OFF on input line 56.
  (d:/Programmi/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (d:/Programmi/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -368,521 +375,536 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count134
 )
-LaTeX Info: Redefining \ref on input line 55.
-LaTeX Info: Redefining \pageref on input line 55.
-LaTeX Info: Redefining \nameref on input line 55.
+LaTeX Info: Redefining \ref on input line 56.
+LaTeX Info: Redefining \pageref on input line 56.
+LaTeX Info: Redefining \nameref on input line 56.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 78.
-LaTeX Font Info:    Try loading font information for U+msa on input line 78.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 79.
+LaTeX Font Info:    Try loading font information for U+msa on input line 79.
  (d:/Programmi/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 78.
+LaTeX Font Info:    Try loading font information for U+msb on input line 79.
  (d:/Programmi/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 80.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 81.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 98.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 99.
 <./immagini/dataset.jpeg, id=5, 487.8225pt x 387.4475pt>
 File: ./immagini/dataset.jpeg Graphic file (type jpg)
 <use ./immagini/dataset.jpeg>
-Package pdftex.def Info: ./immagini/dataset.jpeg  used on input line 123.
+Package pdftex.def Info: ./immagini/dataset.jpeg  used on input line 125.
 (pdftex.def)             Requested size: 189.70947pt x 150.67233pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [1{d:/Programmi/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
  <./immagini/dataset.jpeg>]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 146.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 149.
  (d:/Programmi/texlive/2018/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 146.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 149.
 <./immagini/7_classi.png, id=29, 614.295pt x 261.97874pt>
 File: ./immagini/7_classi.png Graphic file (type png)
 <use ./immagini/7_classi.png>
-Package pdftex.def Info: ./immagini/7_classi.png  used on input line 189.
+Package pdftex.def Info: ./immagini/7_classi.png  used on input line 193.
 (pdftex.def)             Requested size: 237.13594pt x 101.13196pt.
 <./immagini/6_classi.png, id=31, 547.04375pt x 261.97874pt>
 File: ./immagini/6_classi.png Graphic file (type png)
 <use ./immagini/6_classi.png>
-Package pdftex.def Info: ./immagini/6_classi.png  used on input line 198.
+Package pdftex.def Info: ./immagini/6_classi.png  used on input line 203.
 (pdftex.def)             Requested size: 237.13594pt x 113.56407pt.
+
+Underfull \vbox (badness 2762) has occurred while \output is active []
+
+ [2 <./immagini/7_classi.png>]
+<./immagini/classi_bilanciate.png, id=47, 539.01375pt x 261.97874pt>
+File: ./immagini/classi_bilanciate.png Graphic file (type png)
+<use ./immagini/classi_bilanciate.png>
+Package pdftex.def Info: ./immagini/classi_bilanciate.png  used on input line 211.
+(pdftex.def)             Requested size: 237.13594pt x 115.255pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2 <./immagini/7_classi.png>]
-<./immagini/classi_bilanciate.png, id=46, 539.01375pt x 261.97874pt>
-File: ./immagini/classi_bilanciate.png Graphic file (type png)
-<use ./immagini/classi_bilanciate.png>
-Package pdftex.def Info: ./immagini/classi_bilanciate.png  used on input line 205.
-(pdftex.def)             Requested size: 237.13594pt x 115.255pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 220.
-<./immagini/m_inception_v0.pdf, id=50, 1434.91882pt x 441.50946pt>
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 226.
+<./immagini/m_inception_v0.pdf, id=51, 1434.91882pt x 441.50946pt>
 File: ./immagini/m_inception_v0.pdf Graphic file (type pdf)
 <use ./immagini/m_inception_v0.pdf>
-Package pdftex.def Info: ./immagini/m_inception_v0.pdf  used on input line 236.
+Package pdftex.def Info: ./immagini/m_inception_v0.pdf  used on input line 243.
 (pdftex.def)             Requested size: 237.13594pt x 72.96043pt.
-<./immagini/residual_normal.png, id=51, 169.8345pt x 151.767pt>
-File: ./immagini/residual_normal.png Graphic file (type png)
-<use ./immagini/residual_normal.png>
-Package pdftex.def Info: ./immagini/residual_normal.png  used on input line 245.
-(pdftex.def)             Requested size: 189.70947pt x 169.53323pt.
+<./immagini/residual_block.pdf, id=52, 953.96599pt x 865.93513pt>
+File: ./immagini/residual_block.pdf Graphic file (type pdf)
+<use ./immagini/residual_block.pdf>
+Package pdftex.def Info: ./immagini/residual_block.pdf  used on input line 253.
+(pdftex.def)             Requested size: 165.99443pt x 150.66885pt.
  [3 <./immagini/6_classi.png> <./immagini/classi_bilanciate.png> <./immagini/m_inception_v0.pdf>]
-<./immagini/residual_dotted.png, id=71, 507.39563pt x 347.04657pt>
-File: ./immagini/residual_dotted.png Graphic file (type png)
-<use ./immagini/residual_dotted.png>
-Package pdftex.def Info: ./immagini/residual_dotted.png  used on input line 250.
-(pdftex.def)             Requested size: 189.70947pt x 129.75557pt.
+<./immagini/residual_block_with_downsample.pdf, id=92, 967.78862pt x 869.2475pt>
+File: ./immagini/residual_block_with_downsample.pdf Graphic file (type pdf)
+<use ./immagini/residual_block_with_downsample.pdf>
+Package pdftex.def Info: ./immagini/residual_block_with_downsample.pdf  used on input line 259.
+(pdftex.def)             Requested size: 165.99443pt x 149.08322pt.
 
-Overfull \hbox (7.36798pt too wide) in paragraph at lines 260--260
+Overfull \hbox (7.36798pt too wide) in paragraph at lines 269--269
  []|\OT1/ptm/m/n/10 Depth| 
  []
 
 
-Overfull \hbox (0.9668pt too wide) in paragraph at lines 262--262
+Overfull \hbox (0.9668pt too wide) in paragraph at lines 271--271
 []|\OT1/ptm/m/n/10 VGG[]v0|  
  []
 
 
-Overfull \hbox (0.9668pt too wide) in paragraph at lines 263--263
+Overfull \hbox (0.9668pt too wide) in paragraph at lines 272--272
 []|\OT1/ptm/m/n/10 VGG[]v1|  
  []
 
 
-Overfull \hbox (0.9668pt too wide) in paragraph at lines 264--264
+Overfull \hbox (0.9668pt too wide) in paragraph at lines 273--273
 []|\OT1/ptm/m/n/10 VGG[]v2|  
  []
 
 
-Overfull \hbox (0.9668pt too wide) in paragraph at lines 265--265
+Overfull \hbox (0.9668pt too wide) in paragraph at lines 274--274
 []|\OT1/ptm/m/n/10 VGG[]v3|  
  []
 
 
-Overfull \hbox (0.9668pt too wide) in paragraph at lines 266--266
+Overfull \hbox (0.9668pt too wide) in paragraph at lines 275--275
 []|\OT1/ptm/m/n/10 VGG[]v4|  
  []
 
 
-Overfull \hbox (17.22641pt too wide) in paragraph at lines 267--267
+Overfull \hbox (17.22641pt too wide) in paragraph at lines 276--276
 []|\OT1/ptm/m/n/10 Inception[]v0|  
  []
 
 
-Overfull \hbox (8.89635pt too wide) in paragraph at lines 268--268
+Overfull \hbox (8.89635pt too wide) in paragraph at lines 277--277
 []|\OT1/ptm/m/n/10 ResNet[]v2|  
  []
 
 
-Overfull \hbox (8.89635pt too wide) in paragraph at lines 269--269
+Overfull \hbox (8.89635pt too wide) in paragraph at lines 278--278
 []|\OT1/ptm/m/n/10 ResNet[]v3|  
  []
 
 
-Overfull \hbox (8.89635pt too wide) in paragraph at lines 270--270
+Overfull \hbox (8.89635pt too wide) in paragraph at lines 279--279
 []|\OT1/ptm/m/n/10 ResNet[]v4|  
  []
 
 
-Overfull \hbox (1.49742pt too wide) in paragraph at lines 257--277
+Overfull \hbox (1.49742pt too wide) in paragraph at lines 266--286
 [][] 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 294--294
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 303--303
  []|\OT1/ptm/m/n/7 53.53| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 294--294
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 303--303
  []|\OT1/ptm/m/n/7 49.19| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 294--294
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 303--303
  []|\OT1/ptm/m/n/7 76.87| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 294--294
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 303--303
  []|\OT1/ptm/m/n/7 51.60| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 294--294
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 303--303
  []|\OT1/ptm/m/n/7 81.92| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 294--294
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 303--303
  []|\OT1/ptm/m/n/7 57.00| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 295--295
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 304--304
  []|\OT1/ptm/m/n/7 55.64| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 295--295
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 304--304
  []|\OT1/ptm/m/n/7 39.31| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 295--295
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 304--304
  []|\OT1/ptm/m/n/7 80.00| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 295--295
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 304--304
  []|\OT1/ptm/m/n/7 59.26| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 295--295
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 304--304
  []|\OT1/ptm/m/n/7 82.65| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 295--295
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 304--304
  []|\OT1/ptm/m/n/7 62.60| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 296--296
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 305--305
  []|\OT1/ptm/m/n/7 60.80| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 296--296
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 305--305
  []|\OT1/ptm/m/n/7 31.85| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 296--296
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 305--305
  []|\OT1/ptm/m/n/7 80.33| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 296--296
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 305--305
  []|\OT1/ptm/m/n/7 61.86| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 296--296
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 305--305
  []|\OT1/ptm/m/n/7 76.86| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 296--296
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 305--305
  []|\OT1/ptm/m/n/7 61.12| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 297--297
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 306--306
  []|\OT1/ptm/m/n/7 65.77| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 297--297
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 306--306
  []|\OT1/ptm/m/n/7 36.08| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 297--297
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 306--306
  []|\OT1/ptm/m/n/7 82.01| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 297--297
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 306--306
  []|\OT1/ptm/m/n/7 42.72| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 297--297
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 306--306
  []|\OT1/ptm/m/n/7 81.20| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 297--297
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 306--306
  []|\OT1/ptm/m/n/7 76.93| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 298--298
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 307--307
  []|\OT1/ptm/m/n/7 60.03| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 298--298
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 307--307
  []|\OT1/ptm/m/n/7 40.72| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 298--298
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 307--307
  []|\OT1/ptm/m/n/7 81.56| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 298--298
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 307--307
  []|\OT1/ptm/m/n/7 47.93| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 298--298
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 307--307
  []|\OT1/ptm/m/n/7 79.03| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 298--298
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 307--307
  []|\OT1/ptm/m/n/7 72.98| 
  []
 
 
-Overfull \hbox (4.66052pt too wide) in paragraph at lines 299--299
+Overfull \hbox (4.66052pt too wide) in paragraph at lines 308--308
 []|\OT1/ptm/m/n/7 Inception[]v0|  
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 299--299
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 308--308
  []|\OT1/ptm/m/n/7 58.69| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 299--299
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 308--308
  []|\OT1/ptm/m/n/7 41.73| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 299--299
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 308--308
  []|\OT1/ptm/m/n/7 78.88| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 299--299
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 308--308
  []|\OT1/ptm/m/n/7 56.20| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 299--299
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 308--308
  []|\OT1/ptm/m/n/7 75.90| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 299--299
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 308--308
  []|\OT1/ptm/m/n/7 55.51| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 300--300
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 309--309
  []|\OT1/ptm/m/n/7 64.62| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 300--300
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 309--309
  []|\OT1/ptm/m/n/7 34.47| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 300--300
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 309--309
  []|\OT1/ptm/m/n/7 79.88| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 300--300
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 309--309
  []|\OT1/ptm/m/n/7 39.05| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 300--300
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 309--309
  []|\OT1/ptm/m/n/7 77.83| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 300--300
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 309--309
  []|\OT1/ptm/m/n/7 69.85| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 301--301
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 310--310
  []|\OT1/ptm/m/n/7 56.78| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 301--301
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 310--310
  []|\OT1/ptm/m/n/7 41.53| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 301--301
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 310--310
  []|\OT1/ptm/m/n/7 80.89| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 301--301
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 310--310
  []|\OT1/ptm/m/n/7 49.92| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 301--301
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 310--310
  []|\OT1/ptm/m/n/7 82.89| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 301--301
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 310--310
  []|\OT1/ptm/m/n/7 61.94| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 302--302
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 311--311
  []|\OT1/ptm/m/n/7 63.28| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 302--302
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 311--311
  []|\OT1/ptm/m/n/7 39.91| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 302--302
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 311--311
  []|\OT1/ptm/m/n/7 83.35| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 302--302
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 311--311
  []|\OT1/ptm/m/n/7 51.30| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 302--302
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 311--311
  []|\OT1/ptm/m/n/7 75.90| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 302--302
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 311--311
  []|\OT1/ptm/m/n/7 50.08| 
  []
 
 
-Overfull \hbox (0.7684pt too wide) in paragraph at lines 303--303
+Overfull \hbox (0.7684pt too wide) in paragraph at lines 312--312
 []|\OT1/ptm/m/n/7 ensemble[]a|  
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 303--303
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 312--312
  []|\OT1/ptm/m/n/7 66.53| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 303--303
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 312--312
  []|\OT1/ptm/m/n/7 42.33| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 303--303
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 312--312
  []|\OT1/ptm/m/n/7 84.69| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 303--303
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 312--312
  []|\OT1/ptm/m/n/7 61.40| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 303--303
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 312--312
  []|\OT1/ptm/m/n/7 83.37| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 303--303
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 312--312
  []|\OT1/ptm/m/n/7 70.01| 
  []
 
 
-Overfull \hbox (5.71744pt too wide) in paragraph at lines 304--304
+Overfull \hbox (5.71744pt too wide) in paragraph at lines 313--313
 []|\OT1/ptm/m/n/7 ensemble[]aw|  
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 304--304
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 313--313
  []|\OT1/ptm/m/n/7 66.15| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 304--304
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 313--313
  []|\OT1/ptm/m/n/7 41.93| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 304--304
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 313--313
  []|\OT1/ptm/m/n/7 84.46| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 304--304
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 313--313
  []|\OT1/ptm/m/n/7 61.40| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 304--304
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 313--313
  []|\OT1/ptm/m/n/7 83.37| 
  []
 
 
-Overfull \hbox (1.52364pt too wide) in paragraph at lines 304--304
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 313--313
  []|\OT1/ptm/m/n/7 70.34| 
  []
 
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 333.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 342.
 (d:/Programmi/texlive/2018/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 333--333
+Underfull \hbox (badness 10000) in paragraph at lines 342--342
 [][][][]$\OT1/pcr/m/n/8 https : / / www . tensorflow . org / api _ docs / python / tf /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 338--338
+Underfull \hbox (badness 10000) in paragraph at lines 347--347
 [][][][]$\OT1/pcr/m/n/8 https : / / www . tensorflow . org / api _ docs / python / tf /
  []
 
-[4 <./immagini/residual_normal.png> <./immagini/residual_dotted.png>] (d:/UNIPD_LocalD/Magistrale/FErecognition/relazione/egpaper_final.bbl
+[4 <./immagini/residual_block.pdf> <./immagini/residual_block_with_downsample.pdf
+
+pdfTeX warning: pdflatex.exe (file ./immagini/residual_block_with_downsample.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<./immagini/felicita.jpg, id=126, 481.8pt x 481.8pt>
+File: ./immagini/felicita.jpg Graphic file (type jpg)
+<use ./immagini/felicita.jpg>
+Package pdftex.def Info: ./immagini/felicita.jpg  used on input line 394.
+(pdftex.def)             Requested size: 237.13594pt x 237.13535pt.
+ [5 <./immagini/felicita.jpg>] (d:/UNIPD_LocalD/Magistrale/FErecognition/relazione/egpaper_final.bbl
 Underfull \hbox (badness 1917) in paragraph at lines 4--13
 []\OT1/ptm/m/n/9 Ian J. Good-fel-low, Du-mitru Er-han, Pierre Luc Car-rier,
  []
 
-[5])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 396.
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 411.
  [6
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 396.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 411.
  (d:/UNIPD_LocalD/Magistrale/FErecognition/relazione/egpaper_final.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 396.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 396.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 411.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 411.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 396.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 411.
  ) 
 Here is how much of TeX's memory you used:
- 8532 strings out of 492616
- 123202 string characters out of 6128008
- 245289 words of memory out of 5000000
- 12275 multiletter control sequences out of 15000+600000
+ 8604 strings out of 492616
+ 124395 string characters out of 6128008
+ 246548 words of memory out of 5000000
+ 12336 multiletter control sequences out of 15000+600000
  31618 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 33i,12n,48p,530b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 33i,12n,48p,530b,390s stack positions out of 5000i,500n,10000p,200000b,80000s
 {d:/Programmi/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}<d:/Programmi/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/Programmi/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><d:/Programmi/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/Programmi/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><d:/Programmi/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/Programmi/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><d:/Programmi/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/Programmi/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Programmi/texlive/2018/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><d:/Programmi/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><d:/Programmi/texlive/2018/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><d:/Programmi/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><d:/Programmi/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on d:/UNIPD_LocalD/Magistrale/FErecognition/relazione/egpaper_final.pdf (6 pages, 313647 bytes).
+Output written on d:/UNIPD_LocalD/Magistrale/FErecognition/relazione/egpaper_final.pdf (6 pages, 304321 bytes).
 PDF statistics:
- 164 PDF objects out of 1000 (max. 8388607)
- 128 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 203 PDF objects out of 1000 (max. 8388607)
+ 157 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

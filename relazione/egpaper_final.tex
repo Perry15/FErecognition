@@ -37,6 +37,7 @@
 	literate={à}{{\'a}}1 {ù}{{\'u}}1 {è}{{\'e}}1 {é}{{\`e}}1 {ì}{{\'i}}1
 }
 \lstset{style=mystyle}
+\usepackage{nicefrac}
 % Include other packages here, before hyperref.
 
 % If you comment hyperref and then uncomment it, you should delete
@@ -119,9 +120,11 @@ human expressions in natural condition environment is a very challenging task.
 With this project we aim to build a facial expressions classifier able to reach and overtake the human accuracy on this task.
 The main idea was focusing mostly on study different types of model in order to understand a good way to achieve valid outcomes.
 For this reason all preprocessing techniques that can be applied to the input data for improving classification results were not be consider.
-\begin{center}
+\begin{figure}[H]
+   \centering
    \includegraphics[width=0.8\linewidth]{./immagini/dataset.jpeg}
-\end{center}
+   \caption{Example of images from FER2013 dataset}
+\end{figure}
 The chosen dataset is the FER2013 it was selected after some researches, above some examples of images of this dataset are reported.
 FER2013 was the desired dataset, the most suited for our purpose. Training a model with a dataset like that was the challenge
 with the right level of difficulty we wanted.
@@ -185,25 +188,28 @@ The most important reason that pushed us to choose it is the huge number of imag
 Precisely it contains 28709 training images, 3589 validation images and 3589, so in total 35887
 images for each of them there is an associated class that represent seven different expression labels: Angry, Disgust, Fear, Happy, Sad, Surprised, Neutral.
 Below we report an histogram showing the distribution of all the FER2013's labels.
-\begin{center}
+\begin{figure}[H]
+   \centering
    \includegraphics[width=1\linewidth]{./immagini/7_classi.png}
-\end{center}
+\end{figure}
 We tried to apply as few preprocessing techniques as possible because we want to focus on the model performance providing to it a dataset not too optimized.
 We do this choice in order to emphasize the power of the model built, in the sense we want a model able to reach interesting performance independently
 the goodness of the dataset provided to it.
 For this reasons we operate only some minimal preprocessing modification over the dataset, in order to prepare the data to be learned.
 First of all we notice that the class disgust is not so big with respect to the others, so we decide to merge it with the angry class.
 Following a graph showing the merged classes result.
-\begin{center}
+\begin{figure}[H]
+   \centering
    \includegraphics[width=1\linewidth]{./immagini/6_classi.png}
-\end{center}
+\end{figure}
 After this operation the classes are not so much leveled, in particular compared to happy class.
 In fact we have a lot of images for the happy class instead the ones for the surprised emotion are very few.
 To solve this issue we decide to replicate the 60\% of the images of each class, excluding the happy class because as we said it already has enough images.
 In this way we make the images amount for each class more balanced and we reach the following distribution with a total amount of 52025 images.
-\begin{center}
+\begin{figure}[H]
+   \centering
    \includegraphics[width=1\linewidth]{./immagini/classi_bilanciate.png}
-\end{center}
+\end{figure}
 Finally we performed a normalization operation over the dataset in order to provide to the model a numeric common scale.
 After all these needed preprocessing steps we obtain a training set formed by 44847 images and a test set and a validation set each one formed by 3589 images.
 \\An evaluation of other dataset has been done, we considered also CK+ (CohnKanade) dataset that is also commonly used for evaluating FER systems.
@@ -226,13 +232,14 @@ Inception model is a type of network developed from Googlenet \cite{13} with som
 The network consist of several I blocks, flatten, dropout and 1F with 6 neurons. Every I take a parameter called n which represent the number of input neurons. 
 We start with 64 neurons and we increment it of 32 after each I block. I block is composed as follow:
 \begin{itemize}[noitemsep]%,topsep=0pt
-\item 1C relu, (3/4)*n, K=(1,1), padding=same and L2 norm fixed on 0.002
-\item 2C relu, (1/2)*n, K=[(1,1),(3,3)], padding=same and L2 norm lambda fixed on 0.002
-\item 2C relu (1/8)*n, K=[(1,1), (5,5)], padding=same and L2 norm lambda fixed on 0.002
-\item PC relu (1/4)*n, K=(1,1), padding=same and L2 norm lambd fixed on 0.002
+\item 1C relu, $\nicefrac{3}{4}\cdot n$, K=(1,1), padding=same and L2 norm fixed on 0.0002
+\item 2C relu, $\nicefrac{1}{2}\cdot n$, K=[(1,1),(3,3)], padding=same and L2 norm lambda fixed on 0.0002
+\item 2C relu $\nicefrac{1}{8}\cdot n$, K=[(1,1), (5,5)], padding=same and L2 norm lambda fixed on 0.0002
+\item PC relu $\nicefrac{1}{4}\cdot n$, K=(1,1), padding=same and L2 norm lambda fixed on 0.0002
 \end{itemize}
-All these blocks are concatenate in a [1C,2C,2C,PC] layer and became the input of next I blocks.
+All these blocks are concatenated in a [1C,2C,2C,PC] layer and become the input of next I blocks.
 \begin{figure}[h]
+   \centering
    \includegraphics[width=1\linewidth]{./immagini/m_inception_v0.pdf}
    \caption{Representation of an inception block}
 \end{figure}
@@ -242,12 +249,14 @@ Each R consists of B layer and then we have CFBC with strides=1 and the identity
 At some point we want to downsample the input we substitute to the identity function another 
 C layer with strides=2.
 \begin{figure}[H]
-   \includegraphics[width=0.8\linewidth]{./immagini/residual_normal.png}
+   \centering
+   \includegraphics[width=0.7\linewidth]{./immagini/residual_block.pdf}
    \caption{Representation of a residual block without downsample}
 \end{figure}
 
 \begin{figure}[H]
-   \includegraphics[width=0.8\linewidth]{./immagini/residual_dotted.png}
+   \centering
+   \includegraphics[width=0.7\linewidth]{./immagini/residual_block_with_downsample.pdf}
    \caption{Representation of a residual block with downsample}
 \end{figure}
 \noindent In the following table we summarize all the models realized, each one structured as descripted.
@@ -279,7 +288,7 @@ C layer with strides=2.
 \end{table}
 
 {\bf Optimization}
-Each model was training with 150 epochs and we use Adam optimizer and early stopping with a patience of 10 epochs, we use checkpoints to save best weights during training and in some models we use a regularizer to help the loss function with plateaus by reducing the learning rate if there is no improvement on validation set loss after 10 epochs. 
+\\Each model was training with 150 epochs and we use Adam optimizer and early stopping with a patience of 10 epochs, we use checkpoints to save best weights during training and in some models we use a regularizer to help the loss function with plateaus by reducing the learning rate if there is no improvement on validation set loss after 10 epochs. 
 \\After the training phase we obtain about eleven models. After a selection, that we explain in experiments section, we find out that the best combination of models consist of 9 models, we have 5 VGG, 1 inception and 3 ResNet models. We combine them and create two different ensemble, the first one make the average and the second the weighted average based on accuracy of the model to each class.
 
 \def\arraystretch{1.2}
@@ -305,7 +314,7 @@ Each model was training with 150 epochs and we use Adam optimizer and early stop
 
       \hline
    \end{tabular}
-   \caption{0=Angry,1=Fear,2=Happy,3=Sad,4=Surprised,5=Neutral}
+   \caption{ 0=Angry,1=Fear,2=Happy,3=Sad,4=Surprised,5=Neutral}
    %\end{center}
 \end{table}
 \subsection*{Ensemble method}
@@ -380,6 +389,12 @@ and in $w_m$ we have the computed wheigths for the model $m$.
 Final accuracy reached with ensamble
 application webcamm
 
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=1\linewidth]{./immagini/felicita.jpg}
+   \caption{Example of prediction FELICITÀ!!!}
+\end{figure}
+
 \section{Conclusion}
 
 We overtakes the accuracy reached from three papers which describe models that perform the same task with the same dataset used by us cited in \cite{paper}
@@ -387,7 +402,7 @@ We overtakes the accuracy reached from three papers which describe models that p
 
 
 
-
+\newpage
 {\small
    \bibliographystyle{ieee_fullname}
    \bibliography{egbib}
