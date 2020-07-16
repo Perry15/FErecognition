@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.3.16)  16 JUL 2020 18:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.3.16)  16 JUL 2020 18:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -421,18 +421,18 @@ Package pdftex.def Info: ./immagini/classi_bilanciate.png  used on input line 20
 (pdftex.def)             Requested size: 237.13594pt x 115.255pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 220.
-<./immagini/inception.jpg, id=50, 1284.8pt x 253.94875pt>
-File: ./immagini/inception.jpg Graphic file (type jpg)
-<use ./immagini/inception.jpg>
-Package pdftex.def Info: ./immagini/inception.jpg  used on input line 236.
-(pdftex.def)             Requested size: 237.13594pt x 46.87128pt.
+<./immagini/m_inception_v0.pdf, id=50, 1434.91882pt x 441.50946pt>
+File: ./immagini/m_inception_v0.pdf Graphic file (type pdf)
+<use ./immagini/m_inception_v0.pdf>
+Package pdftex.def Info: ./immagini/m_inception_v0.pdf  used on input line 236.
+(pdftex.def)             Requested size: 237.13594pt x 72.96043pt.
 <./immagini/residual_normal.png, id=51, 169.8345pt x 151.767pt>
 File: ./immagini/residual_normal.png Graphic file (type png)
 <use ./immagini/residual_normal.png>
 Package pdftex.def Info: ./immagini/residual_normal.png  used on input line 245.
 (pdftex.def)             Requested size: 189.70947pt x 169.53323pt.
- [3 <./immagini/6_classi.png> <./immagini/classi_bilanciate.png> <./immagini/inception.jpg>]
-<./immagini/residual_dotted.png, id=63, 507.39563pt x 347.04657pt>
+ [3 <./immagini/6_classi.png> <./immagini/classi_bilanciate.png> <./immagini/m_inception_v0.pdf>]
+<./immagini/residual_dotted.png, id=71, 507.39563pt x 347.04657pt>
 File: ./immagini/residual_dotted.png Graphic file (type png)
 <use ./immagini/residual_dotted.png>
 Package pdftex.def Info: ./immagini/residual_dotted.png  used on input line 250.
@@ -767,16 +767,86 @@ Overfull \hbox (1.52364pt too wide) in paragraph at lines 302--302
  []|\OT1/ptm/m/n/7 50.08| 
  []
 
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 330.
+
+Overfull \hbox (0.7684pt too wide) in paragraph at lines 303--303
+[]|\OT1/ptm/m/n/7 ensemble[]a|  
+ []
+
+
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 303--303
+ []|\OT1/ptm/m/n/7 66.53| 
+ []
+
+
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 303--303
+ []|\OT1/ptm/m/n/7 42.33| 
+ []
+
+
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 303--303
+ []|\OT1/ptm/m/n/7 84.69| 
+ []
+
+
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 303--303
+ []|\OT1/ptm/m/n/7 61.40| 
+ []
+
+
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 303--303
+ []|\OT1/ptm/m/n/7 83.37| 
+ []
+
+
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 303--303
+ []|\OT1/ptm/m/n/7 70.01| 
+ []
+
+
+Overfull \hbox (5.71744pt too wide) in paragraph at lines 304--304
+[]|\OT1/ptm/m/n/7 ensemble[]aw|  
+ []
+
+
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 304--304
+ []|\OT1/ptm/m/n/7 66.15| 
+ []
+
+
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 304--304
+ []|\OT1/ptm/m/n/7 41.93| 
+ []
+
+
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 304--304
+ []|\OT1/ptm/m/n/7 84.46| 
+ []
+
+
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 304--304
+ []|\OT1/ptm/m/n/7 61.40| 
+ []
+
+
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 304--304
+ []|\OT1/ptm/m/n/7 83.37| 
+ []
+
+
+Overfull \hbox (1.52364pt too wide) in paragraph at lines 304--304
+ []|\OT1/ptm/m/n/7 70.34| 
+ []
+
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 333.
 (d:/Programmi/texlive/2018/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 330--330
+Underfull \hbox (badness 10000) in paragraph at lines 333--333
 [][][][]$\OT1/pcr/m/n/8 https : / / www . tensorflow . org / api _ docs / python / tf /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--335
+Underfull \hbox (badness 10000) in paragraph at lines 338--338
 [][][][]$\OT1/pcr/m/n/8 https : / / www . tensorflow . org / api _ docs / python / tf /
  []
 
@@ -786,33 +856,33 @@ Underfull \hbox (badness 1917) in paragraph at lines 4--13
  []
 
 [5])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 393.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 396.
  [6
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 393.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 396.
  (d:/UNIPD_LocalD/Magistrale/FErecognition/relazione/egpaper_final.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 393.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 393.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 396.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 396.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 393.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 396.
  ) 
 Here is how much of TeX's memory you used:
- 8533 strings out of 492616
- 123157 string characters out of 6128008
- 243289 words of memory out of 5000000
+ 8532 strings out of 492616
+ 123202 string characters out of 6128008
+ 245289 words of memory out of 5000000
  12275 multiletter control sequences out of 15000+600000
  31618 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 33i,12n,48p,530b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 33i,12n,48p,530b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
 {d:/Programmi/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}<d:/Programmi/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/Programmi/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><d:/Programmi/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/Programmi/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><d:/Programmi/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/Programmi/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><d:/Programmi/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/Programmi/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Programmi/texlive/2018/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><d:/Programmi/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><d:/Programmi/texlive/2018/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><d:/Programmi/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><d:/Programmi/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on d:/UNIPD_LocalD/Magistrale/FErecognition/relazione/egpaper_final.pdf (6 pages, 346632 bytes).
+Output written on d:/UNIPD_LocalD/Magistrale/FErecognition/relazione/egpaper_final.pdf (6 pages, 313647 bytes).
 PDF statistics:
- 156 PDF objects out of 1000 (max. 8388607)
- 121 compressed objects within 2 object streams
+ 164 PDF objects out of 1000 (max. 8388607)
+ 128 compressed objects within 2 object streams
  35 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

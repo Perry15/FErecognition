@@ -176,9 +176,9 @@ INPUT d:/UNIPD_LocalD/Magistrale/FErecognition/relazione/./immagini/classi_bilan
 INPUT ./immagini/classi_bilanciate.png
 INPUT ./immagini/classi_bilanciate.png
 INPUT d:/Programmi/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT d:/UNIPD_LocalD/Magistrale/FErecognition/relazione/./immagini/inception.jpg
-INPUT ./immagini/inception.jpg
-INPUT ./immagini/inception.jpg
+INPUT d:/UNIPD_LocalD/Magistrale/FErecognition/relazione/./immagini/m_inception_v0.pdf
+INPUT ./immagini/m_inception_v0.pdf
+INPUT ./immagini/m_inception_v0.pdf
 INPUT d:/Programmi/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
 INPUT d:/UNIPD_LocalD/Magistrale/FErecognition/relazione/./immagini/residual_normal.png
 INPUT ./immagini/residual_normal.png

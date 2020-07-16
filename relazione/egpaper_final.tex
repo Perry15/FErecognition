@@ -233,7 +233,7 @@ We start with 64 neurons and we increment it of 32 after each I block. I block i
 \end{itemize}
 All these blocks are concatenate in a [1C,2C,2C,PC] layer and became the input of next I blocks.
 \begin{figure}[h]
-   \includegraphics[width=1\linewidth]{./immagini/inception.jpg}
+   \includegraphics[width=1\linewidth]{./immagini/m_inception_v0.pdf}
    \caption{Representation of an inception block}
 \end{figure}
 \subsection*{ResNet}
@@ -300,6 +300,9 @@ Each model was training with 150 epochs and we use Adam optimizer and early stop
       ResNet\_v2    & 64.62  & 34.47  & 79.88  & 39.05  & 77.83  & 69.85  & 61.80         \\
       ResNet\_v3    & 56.78  & 41.53  & 80.89  & 49.92  & 82.89  & 61.94  & 63.17         \\
       ResNet\_v4    & 63.28  & 39.91  & 83.35  & 51.30  & 75.90  & 50.08  & 63.53         \\
+      ensemble\_a    & 66.53 & 42.33 & 84.69 & 61.40 & 83.37 & 70.01 & 71.41\\
+      ensemble\_aw   & 66.15 & 41.93 & 84.46 & 61.40 & 83.37 & 70.34 & 71.52\\
+
       \hline
    \end{tabular}
    \caption{0=Angry,1=Fear,2=Happy,3=Sad,4=Surprised,5=Neutral}
