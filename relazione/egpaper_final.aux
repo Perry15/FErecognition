@@ -20,8 +20,8 @@
 \citation{3}
 \citation{paper}
 \citation{147}
-\@writefile{toc}{\contentsline {section}{\numberline {1}\hskip -1em.\nobreakspace  {}Introduction}{1}{section.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Example of images from FER2013 dataset}}{1}{figure.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1}\hskip -1em.\nobreakspace  {}Introduction}{1}{section.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Example of images from FER2013 dataset}}{1}{figure.1}}
 \citation{24}
 \citation{13}
 \citation{5}
@@ -29,24 +29,34 @@
 \citation{Zhang}
 \citation{Kim}
 \citation{147}
-\@writefile{toc}{\contentsline {section}{\numberline {2}\hskip -1em.\nobreakspace  {}Related Work}{2}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}\hskip -1em.\nobreakspace  {}Related Work}{2}{section.2}}
 \newlabel{mytable}{{2}{2}{\hskip -1em.~Related Work}{section.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}\hskip -1em.\nobreakspace  {}Dataset}{2}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}\hskip -1em.\nobreakspace  {}Dataset}{2}{section.3}}
 \citation{24}
 \citation{13}
 \citation{147}
-\@writefile{toc}{\contentsline {section}{\numberline {4}\hskip -1em.\nobreakspace  {}Method}{3}{section.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Representation of an inception block}}{3}{figure.2}\protected@file@percent }
 \citation{147}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Representation of a residual block without downsample}}{4}{figure.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Representation of a residual block with downsample}}{4}{figure.4}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces C, P, B, I, and F stands for convolutional, pooling, batch normalization, inception and fully connected layers respectively. 3[R] means group of three residual blocks. 4[CCP] means group of four CCP blocks. Final layer and dropout have been omitted.}}{4}{table.1}\protected@file@percent }
-\newlabel{mytable}{{1}{4}{C, P, B, I, and F stands for convolutional, pooling, batch normalization, inception and fully connected layers respectively. 3[R] means group of three residual blocks. 4[CCP] means group of four CCP blocks. Final layer and dropout have been omitted}{table.1}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces  0=Angry,1=Fear,2=Happy,3=Sad,4=Surprised,5=Neutral}}{4}{table.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5}\hskip -1em.\nobreakspace  {}Experiments}{4}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}\hskip -1em.\nobreakspace  {}Method}{3}{section.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Representation of an I block}}{3}{figure.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Representation of a residual block}}{4}{figure.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Representation of a residual block with downsample}}{4}{figure.4}}
+\newlabel{model:stable}{{4}{4}{ResNet}{figure.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Summarize all the models realized. C, P, B, I, and F stands for convolutional, pooling, batch normalization, inception and fully connected layers respectively. 3[R] means group of three residual blocks. 4[CCP] means group of four CCP blocks. Final layer and dropout have been omitted.}}{4}{table.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Example of general ensemble method, in the meta-learner we compute the weighted average using the accuracy over the class and global accuracy for each model.}}{4}{figure.5}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces  0=Angry,1=Fear,2=Happy,3=Sad,4=Surprised,5=Neutral, accuracy over the classes for each of the ensemble method.}}{4}{table.2}}
+\newlabel{table:accuracymodelli}{{2}{4}{0=Angry,1=Fear,2=Happy,3=Sad,4=Surprised,5=Neutral, accuracy over the classes for each of the ensemble method}{table.2}{}}
+\citation{147}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces  0=Angry,1=Fear,2=Happy,3=Sad,4=Surprised,5=Neutral, accuracy over the classes for each of the 9 models selected for the ensemble method.}}{5}{table.3}}
+\newlabel{table:modelli9}{{3}{5}{0=Angry,1=Fear,2=Happy,3=Sad,4=Surprised,5=Neutral, accuracy over the classes for each of the 9 models selected for the ensemble method}{table.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}\hskip -1em.\nobreakspace  {}Experiments}{5}{section.5}}
+\newlabel{section:experiments}{{5}{5}{\hskip -1em.~Experiments}{section.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces  0=Angry,1=Fear,2=Happy,3=Sad,4=Surprised,5=Neutral, the models we rejected because get worse the ensemble.}}{5}{table.4}}
+\newlabel{table:accuracymodelli}{{4}{5}{0=Angry,1=Fear,2=Happy,3=Sad,4=Surprised,5=Neutral, the models we rejected because get worse the ensemble}{table.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces  0=Angry,1=Fear,2=Happy,3=Sad,4=Surprised,5=Neutral, in this ensemble we use all the 11 models developed.}}{5}{table.5}}
+\newlabel{table:accuracymodelli}{{5}{5}{0=Angry,1=Fear,2=Happy,3=Sad,4=Surprised,5=Neutral, in this ensemble we use all the 11 models developed}{table.5}{}}
 \citation{paper}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Example of prediction FELICIT\IeC {\`A}!!!}}{5}{figure.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6}\hskip -1em.\nobreakspace  {}Conclusion}{5}{section.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Example of prediction FELICITÀ!!!}}{6}{figure.6}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}\hskip -1em.\nobreakspace  {}Conclusion}{6}{section.6}}
 \bibstyle{ieee_fullname}
 \bibdata{egbib}
 \bibcite{3}{1}
