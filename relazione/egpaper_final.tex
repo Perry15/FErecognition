@@ -148,19 +148,22 @@ to compare our results with other works it was the most appropriate dataset.
 
 \section{Method}
 The final model we build is an ensemble composed by different models from VGG, inception and ResNet types, for each type of model we train different of it in order to obtain predictions well generalized, the best models we develeped is reported in table \ref{model:stable}.
-\subsection*{VGG}
+\subsection{VGG}
+\label{subsection:VGG}
 For realizing this kind of network we follow the structure VGG-B descripted in \cite{24}. The VGG model is composed by several [CCPD] blocks and after flatting the data thery are followed by some Fully connected (F) layers. We developed 3 different version of this type of network, as shown below:
 \\{\bf VGG\_v0} is composed by 4[CCPD], followed by 3F layers with respectively 25,25,6 neurons.
 \\{\bf VGG\_v1} is composed by 4[CCBPD], followed by 4F layers with respectively 512,256,128,6 neurons.
 \\{\bf VGG\_v2} is composed by 4[CBCBPD], followed by 4F layers with respectively 512,256,128,6 neurons.
 VGG1 and VGG2 regularize the first C layer with L2 norm $\lambda=0.01$.
-\subsection*{Inception}
+\subsection{Inception}
+\label{subsection:Inception}
 Inception model is a type of network developed from Googlenet \cite{13} with some modification according to paper \cite{147}, we remove the initial pooling layer because, how the paper report \cite{147}, images are not so big. The network consist of several Inception (I) blocks followed by a flatten and dropout layer and ending in a F layer with 6 neurons. For creatinig the I block we used a function that took a parameter $n$ representing the number of neurons of each block. We start with 64 neurons and we increment it of 32 after each I block. Every I block  use one C layer padding same and L2 norm $\lambda=0.0002$, also we report kernel size (K) for the C layers. I block is composed as follow:
 \begin{enumerate}[noitemsep]%,topsep=0pt
    \item 1C relu, $\nicefrac{3}{4}\cdot n$, KernelSize (K) = (1,1)
    \item 2C relu, $\nicefrac{1}{2}\cdot n$, K=[(1,1),(3,3)]
-   \item 2C relu $\nicefrac{1}{8}\cdot n$, K=[(1,1), (5,5)]
-   \item PC relu $\nicefrac{1}{4}\cdot n$, K=(1,1)
+   \item 2C relu, $\nicefrac{1}{8}\cdot n$, K=[(1,1), (5,5)]
+   \item 1C relu, $\nicefrac{1}{4}\cdot n$, K=(5,5)
+   \item PC relu, $\nicefrac{1}{4}\cdot n$, K=(1,1)
 \end{enumerate}
 All these blocks are concatenated in a [1C,2C,2C,PC] layer and after a P layer it become the input of next I blocks.
 \begin{figure}[h]
@@ -169,7 +172,8 @@ All these blocks are concatenated in a [1C,2C,2C,PC] layer and after a P layer i
    \caption{Representation of an I block}
 \end{figure}
 \newpage
-\subsection*{ResNet}
+\subsection{ResNet}
+\label{subsection:ResNet}
 Resnet model is a network that use Residuals (R) blocks. Each R consists of BatchNormalization (B) layer follow by CFBC layers with strides=1, in the end we find an add (A) layer where we concatenate the output of CFBC and the initial B. Each C layer has kernel size = (3,3) and use padding same, moreover the number of filter increase by a factor of 2 at each R block.
 \begin{figure}[H]
    \centering
@@ -210,13 +214,14 @@ At some fixed number of R blocks it is necessary to downsample the data and we s
 
 \end{table}
 
-\subsection*{Optimization}
+\subsection{Optimization}
 In this part we exploit how we train the models and what tools we use in order to get best model. Each model was training with 150 epochs using Adam optimizer. Train this models were very long so we decided to use early stopping with a patience of 10 epochs and in some models we use a regularizer to help the loss function when it find plateaus by reducing the learning rate if there is no improvement on the loss function of the validation set after 10 epochs.\\
 We use checkpoints to save best weights during training.\\
 After the training phase we obtain about 11 models and we operate a selection over them, that we explain in experiments section \ref{section:experiments}. We find out that the best combination of models consist of 9 models, we have 5 VGG, 1 inception and 3 ResNet models. We combine them and create two different ensemble, the first one make the average and the second the weighted average based on accuracy of the model to each class.
 
 
-\subsection*{Ensemble method}
+\subsection{Ensemble method}
+\label{subsection:ensemble}
 The main goal was to train different model and then combine them in order to obtain a better generalization and improve the performance of the Ensemble, as follow the Ensemble we tried:\\
 \begin{figure}[H]
    \centering
@@ -239,13 +244,13 @@ The main goal was to train different model and then combine them in order to obt
       \hline
    \end{tabular}
    \caption{ 0=Angry,1=Fear,2=Happy,3=Sad,4=Surprised,5=Neutral, accuracy over the classes for each of the ensemble method.}
-   \label{table:accuracymodelli}
+   \label{table:accuracyensemble9}
    %\end{center}
 \end{table}
 \newpage
-\textbf{Ensemble1}: we take the prediction from all models and then we calculate the simple average over the prediction of the same class, the best ensemble we obtain has accuracy 71.41\% over the test set.\\
-\textbf{Ensemble2}: a natural step was to try weighted the average based on the accuracy of each model, but the final accuracy of the model is the same as the previous, the accuracy is 71.41\% over the test set.\\
-\textbf{Ensemble3}: we saw that some model in specific class are not so good, so we decide to weighted the average with class accuracy instead global accuracy of each model, the accuracy is 71.52\% over the test set.
+\textbf{Ensemble9\_1}: we take the prediction from all models and then we calculate the simple average over the prediction of the same class, the best ensemble we obtain has accuracy 71.41\% over the test set.\\
+\textbf{Ensemble9\_2}: a natural step was to try weighted the average based on the accuracy of each model, but the final accuracy of the model is the same as the previous, the accuracy is 71.41\% over the test set.\\
+\textbf{Ensemble9\_3}: we saw that some model in specific class are not so good, so we decide to weighted the average with class accuracy instead global accuracy of each model, the accuracy is 71.52\% over the test set.
 
 \def\arraystretch{1.2}
 \begin{table}[H]
@@ -274,7 +279,10 @@ The main goal was to train different model and then combine them in order to obt
 
 \section{Experiments}
 \label{section:experiments}
-Our experiments started from an unique convolution neural network with a VGG like structure. This first network was trained with Adam optimizer and it reached a test accuracy of 60.27\%. So we started from this first network and we search for best methods in order to increase model's accuracy. Like we said in the previous sections the final model we obtained is an ensemble method composed by nine CNNs of three different types, that are VGG, Inception and Resnet.
+In this section we will explain the process we made in order to realize the final ensemble model, illustrating all the steps we perform to build the needed networks and to improve the performance of them.
+\subsection{Starting point}
+Our experiments started from an unique convolutional neural network with a VGG like structure, which we called old\_net. This first network was trained with Adam optimizer and it reached a test accuracy of 60.27\%. We started from this first network and we searched for best methods in order to increase model's accuracy. Like we said in the previous sections the final model we obtained is an ensemble method composed by nine CNNs of three different types, that are VGG, Inception and ResNet. And in this nine networks used for the final ensemble method we had to discard some networks we realized during the experiments process pursued in order to achieve models with best performance.
+In \ref{table:modelliscartati} we show two models we discarded.
 \def\arraystretch{1.2}
 \begin{table}[H]
    %\begin{center}
@@ -289,19 +297,25 @@ Our experiments started from an unique convolution neural network with a VGG lik
       \hline
    \end{tabular}
    \caption{ 0=Angry,1=Fear,2=Happy,3=Sad,4=Surprised,5=Neutral, the models we rejected because get worse the ensemble.}
-   \label{table:accuracymodelli}
+   \label{table:modelliscartati}
    %\end{center}
 \end{table}
-%parlare che abbiamo provato ad usare dataset non normalizzato
-We started following the model described in \cite{147}, implementing CNNs architecture.\\
-The initial modification to the first CNN was the addition of B layers after every C layer. We also added some D layers useful to control the overfitting problem. Then we tried to use an SGD optimizer with initial learning rate = 0.1, L2 norm $\lambda=0.0001$, momentum = 0.9, batch size = 128. We trained initially every network for 300 epochs but then we decided to reduce the number of epochs for which we trained the models to 150 for reasons of time needed for the training process.
-Moreover with added a learning rate regularizer in order to half the learning rate if the validation accuracy did not improve for 10 epochs and with this optimizer we did not reach very interesting results due to the fact that sometimes the validation accuracy remained stuck on too low value, despite the learning rate regularizer. \\
+\subsection{Realizing three CNNs types}
+After some modification tests, which did not lead so much improvement to our first network old\_net, we started following the model described in \cite{147}, implementing three CNNs architecture described in \ref{subsection:VGG}, \ref{subsection:Inception}, \ref{subsection:ResNet}.\\
+The initial modification has been the addition of B layers after every C layer. We also added some D layers, which have been useful to control the overfitting problem. Then we tried to use an SGD optimizer with initial learning rate = 0.1, L2 norm $\lambda=0.0001$, momentum = 0.9, batch size = 128. Initially we trained every network for 300 epochs but then we decided to reduce the number of epochs for which we trained the models to 150, for reasons of time needed for the training process. 
+
+\subsection{Modifications for performance improving}
+Following we describe al the modifications we apported to each model we realized.
+We added a learning rate regularizer in order to half the learning rate if the validation accuracy did not improve for 10 epochs and with this optimizer we did not reach very interesting results due to the fact that sometimes the validation accuracy remained stuck on too low value, despite the learning rate regularizer. \\
 For this reason we switched to use Adam optimizer, which being an adaptive learning method solved our problem.
 Using the tensorflow callback ReduceLROnPlateau\footnote{\url{https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/ReduceLROnPlateau}} we added another system to control the learning rate. \\
 With this method we help the loss function to get rid when the gradient descent is stuck in plateaus regions. What is done is reducing the learning rate parameter multiplying it for a defined factor if there is no improvement on the validation loss after a certain amount of epochs specified with the patience parameter. In order to save time and to optimize the accuracy of our models we decided to use the early stopping technique, trying different patience setting, in this way we were stopping the training when the model were not able to improve his validation loss for 10 epochs. We also use a checkpointer callback\footnote{\url{https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/ModelCheckpointin}} in order to save the best model reached during the training process. In addition to the dropout we tried to use also an L2 regularizer in the VGG type networks. Combining all this settings we managed to get improved results.\\
-Practically trying many different combination of modification including the change of filters used in convolution layers and the addition of some more dense layer before the output layer. Like we reported on the table\ref{table:modelli9} we achieved a 67.18\% of test accuracy with a VGG neural network, that is our best result for a single network model. 
+Practically trying many different combination of modifications including the change of filters used in convolution layers and the addition of some more dense layer before the output layer. Like we reported on the table\ref{table:modelli9} we achieved a 67.18\% of test accuracy with a VGG neural network, that is our best result for a single network model. 
 
-So, after many experiments we obtained eleven different models and we selected nine of them shown in table\ref{table:modelli9} and we reject. Initially we used all the eleven models to build the ensemble model.\\
+So, after many experiments we obtained eleven different models and we selected nine of them shown in table \ref{table:modelli9}. 
+
+\subsection{Ensemble models}
+Initially we used all the eleven models to build the ensemble model, then like is illustrated in \ref{subsection:ensemble}\\
 The ensemble model was built using a bagging technique, so retrieving the predictions made from all the single models and combining in a unique final prediction. 
 \def\arraystretch{1.2}
 \begin{table}[H]
@@ -321,17 +335,15 @@ The ensemble model was built using a bagging technique, so retrieving the predic
    \label{table:accuracymodelli}
    %\end{center}
 \end{table}
+\noindent
 \textbf{ensemble11\_1}: the predictions are combined making the average over all the predictions of the same class of each eleven models. In this way, that is putting together all the models we obtained a test accuracy of 70.95\%.\\
 \textbf{ensemble11\_2}: At this point we tried to improve out performance weighting the results of each models based on accuracy of each model over the validation set, and we reach a test accuracy of 70.39\%, it is worst compared to the previous. \\
 \textbf{ensemble11\_3}: we tried to weighting the predictions of each models with the accuracy over the classes for each model and we reach an accuracy of 70.95\%.  \\
-
-\noindent\textbf{Models selection}: after create the first version of the ensemble we decide to try all different combination of the models from a minimum subset of 6 models to the maximum set of 11 models, we calculate for each combination the accuracy of the ensemble3 of the selected models, we decide to use ensemble3 becuase it seemed the better one. 
 
 In order to compute this average we calculated a vector of weights to apply on the predictions of every model. To compute the weights we calculated the recall on the validation set for every prediction value returned by every model and we normalize it dividing by the sum of the weights computed.
 The computation of the weights can be represented as following
 \begin{center}
    $\sum_{m=1,...,n} \frac{r_{m}}{\sum_{i=1,...,6} r_{m}[i]}$
-
 \end{center}
 where $r_m$ is a vector containing the recalls value for the model $m$
 Having the weights normalized means that we have a level of the importance for every predicted class of every models.
@@ -339,27 +351,45 @@ The weighted average has been calculated as follows
 \begin{center}
    $\sum_{m=0,...,n} y_m\cdot w_m$
 \end{center}
-$\sum_{m=0,...,n} y_m\cdot w_m$
 where in $y_m$ we have the predictions of the model $m$
-and in $w_m$ we have the computed wheigths for the model $m$.
+and in $w_m$ we have the computed weights for the model $m$.
 
-
-application webcamm
+\subsection{Models selection}
+After create the first version of the ensemble we decided to try all different combination of the models from a minimum subset of 6 models to the maximum set of 11 models, we calculated for each combination the accuracy of the ensemble3 of the selected models, we chose to use ensemble3 because it seemed the better one. 
+\\So the final model we obtained is the ensemble9\_3 model described in \ref{subsection:ensemble}, with which we obtain 71.52\% test accuracy.
+\subsection{Application}
+Finally we produced a python application for trying to use our model in order to predict emotions using the webcam of our personal computer.
+We realized a simply application that retrieve images from webcam, it crops them and it convert them to grayscale in order to make a little bit similar to the FER2013 images.
+The application starts the webcam and use our final model to predict an emotion and it shows the prediction below the webcam video that is being captured. Below we reported some application screenshot example.
 
 \begin{figure}[H]
    \centering
-   \includegraphics[width=1\linewidth]{./immagini/felicita.jpg}
-   \caption{Example of prediction FELICITÀ!!!}
+   \includegraphics[width=0.8\linewidth]{./immagini/ele_felice.png}
+   \caption{Example of happyness prediction}
+\end{figure}
+
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=0.8\linewidth]{./immagini/ele_triste.png}
+   \caption{Example of sadness prediction}
+\end{figure}
+
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=0.8\linewidth]{./immagini/ele_neutrale.png}
+   \caption{Example of neutral prediction}
+\end{figure}
+
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=0.8\linewidth]{./immagini/ele_rabbia.png}
+   \caption{Example of angry prediction}
 \end{figure}
 
 \section{Conclusion}
+We can say we have achieved our aims which were to overtake the human accuracy estimated on the FER2013 dataset, which is 65.5\%. We wanted to reach a better performance than that and we our final model we registered a test accuracy of 71.52\%, for this result we are satisfied.
+Futhermore we overtakes the accuracy reached from three papers, cited in \cite{paper}, in which were described models that perform the same task with the same dataset used by us, we are fullfilled for this result too. We can say it was very difficult to develop all the different models and it tooks a lot of times to train them, but we achieved a very good performance for each model. Moreover the ensemble obtained was a challenge in general, because combining all different models were not too easy. One important point we could absorb from this project is that we learnt how to make appropriate modification in the models, in order to obtain improvements of performance. We also understood how it is possible to use many networks in order to produce an ensemble method and use it directly into an application. Surely we have explored only a part of the process to improve the performance on a model that predicts facial expressions, in fact the accuracy results obtained nowadays are greater than our. So there would be other techniques to apply in order to improve our model starting from data-augmentation to modifications of the ensemble model adding more types of CNNs and also improving the outcomes obtained from the ones we already use.
 
-We overtakes the accuracy reached from three papers which describe models that perform the same task with the same dataset used by us cited in \cite{paper}
-
-
-
-
-\newpage
 {\small
    \bibliographystyle{ieee_fullname}
    \bibliography{egbib}
