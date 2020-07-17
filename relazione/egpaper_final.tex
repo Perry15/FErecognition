@@ -248,7 +248,7 @@ The main goal was to train different model and then combine them in order to obt
    %\end{center}
 \end{table}
 \newpage
-\textbf{Ensemble9\_1}: we take the prediction from all models and then we calculate the simple average over the prediction of the same class, the best ensemble we obtain has accuracy 71.41\% over the test set.\\
+\noindent\textbf{Ensemble9\_1}: we take the prediction from all models and then we calculate the simple average over the prediction of the same class, the best ensemble we obtain has accuracy 71.41\% over the test set.\\
 \textbf{Ensemble9\_2}: a natural step was to try weighted the average based on the accuracy of each model, but the final accuracy of the model is the same as the previous, the accuracy is 71.41\% over the test set.\\
 \textbf{Ensemble9\_3}: we saw that some model in specific class are not so good, so we decide to weighted the average with class accuracy instead global accuracy of each model, the accuracy is 71.52\% over the test set.
 
@@ -335,8 +335,7 @@ The ensemble model was built using a bagging technique, so retrieving the predic
    \label{table:accuracymodelli}
    %\end{center}
 \end{table}
-\noindent
-\textbf{ensemble11\_1}: the predictions are combined making the average over all the predictions of the same class of each eleven models. In this way, that is putting together all the models we obtained a test accuracy of 70.95\%.\\
+\noindent\textbf{ensemble11\_1}: the predictions are combined making the average over all the predictions of the same class of each eleven models. In this way, that is putting together all the models we obtained a test accuracy of 70.95\%.\\
 \textbf{ensemble11\_2}: At this point we tried to improve out performance weighting the results of each models based on accuracy of each model over the validation set, and we reach a test accuracy of 70.39\%, it is worst compared to the previous. \\
 \textbf{ensemble11\_3}: we tried to weighting the predictions of each models with the accuracy over the classes for each model and we reach an accuracy of 70.95\%.  \\
 
