@@ -1,0 +1,58 @@
+\begin{thebibliography}{1}\itemsep=-1pt
+
+\bibitem{3}
+Ian~J. Goodfellow, Dumitru Erhan, Pierre~Luc Carrier, Aaron Courville, Mehdi
+  Mirza, Ben Hamner, Will Cukierski, Yichuan Tang, David Thaler, Dong-Hyun Lee,
+  Yingbo Zhou, Chetan Ramaiah, Fangxiang Feng, Ruifan Li, Xiaojie Wang,
+  Dimitris Athanasakis, John Shawe-Taylor, Maxim Milakov, John Park, Radu
+  Ionescu, Marius Popescu, Cristian Grozea, James Bergstra, Jingjing Xie,
+  Lukasz Romaszko, Bing Xu, Zhang Chuang, and Yoshua Bengio.
+\newblock Challenges in representation learning: A report on three machine
+  learning contests.
+\newblock 2013.
+
+\bibitem{5}
+K. He, X. Zhang, haoqing Ren, , and J. Sun.
+\newblock Deep residual learning for image recognition.
+\newblock 2015.
+
+\bibitem{Kim}
+B.-K. Kim, S.-Y. Dong, J.~Roh~G. Kim, and S.-Y. Lee.
+\newblock Fusing aligned and non-aligned face information for automatic affect
+  recognition in the wild: A deep learning approach.
+\newblock 2016.
+
+\bibitem{paper}
+S. Li and W. Deng.
+\newblock Deep facial expression recognition: A survey.
+\newblock {\em IEEE Transactions on Affective Computing}, 2020.
+
+\bibitem{2}
+M.~V.~B. Martinez.
+\newblock Advances, challenges, and opportunities in automatic facial
+  expression recognition.
+\newblock {\em Advances in Face Detection and Facial Image Analysis}, 2016.
+
+\bibitem{147}
+C. Pramerdorfer and M. Kampel.
+\newblock Facial expression recognition using convolutional neural networks:
+  State of the art.
+\newblock 2016.
+
+\bibitem{24}
+K. Simonyan and A. Zisserman.
+\newblock Very deep convolutional networks for large-scale image recognition.
+\newblock 2014.
+
+\bibitem{13}
+C. Szegedy, W. Liu, Y. Jia, P. Sermanet, S. Reed, D. Anguelov, D. Erhan, V.
+  Vanhoucke, , and A. Rabinovich.
+\newblock Going deeper with convolutions.
+\newblock 2015.
+
+\bibitem{Zhang}
+C.~C.~Loy Z.~Zhang, P.~Luo and X. Tang.
+\newblock Learning social relation traits from face images.
+\newblock 2015.
+
+\end{thebibliography}
